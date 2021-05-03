@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/greaterThanOrEqual_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/greaterThanOrEqual"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/greaterThanOrEqual_editText"
+            app:layout_constraintStart_toStartOf="@+id/lessThanOrEqual_textView"
+            app:layout_constraintTop_toTopOf="@+id/greaterThanOrEqual_editText" />
+
+        <EditText
+            android:id="@+id/greaterThanOrEqual_editText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ex_1"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/lessThanOrEqual_editText"
+            app:layout_constraintStart_toStartOf="@+id/lessThanOrEqual_editText"
+            app:layout_constraintTop_toBottomOf="@+id/lessThanOrEqual_editText" />
+
+        <TextView
+            android:id="@+id/filterOption_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/filter_options"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/filterHazardLevel_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/filterHazardListOptions"
+            app:layout_constraintBottom_toBottomOf="@+id/filterHazardLevel_textView"
+            app:layout_constraintEnd_toEndOf="@+id/myFavourite_switch"
+            app:layout_constraintTop_toTopOf="@+id/filterHazardLevel_textView" />
+
+        <TextView
+            android:id="@+id/filterHazardLevel_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/hazardLevelForMostRecentInspection"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterOption_textView"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/numCriticalInspections_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/of_critical_inspections_within_last_year"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/filterHazardLevel_textView"
+            app:layout_constraintTop_toBottomOf="@+id/filterHazardLevel_textView" />
+
+        <TextView
+            android:id="@+id/lessThanOrEqual_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/lessThanOrEqual"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lessThanOrEqual_editText"
+            app:layout_constraintStart_toStartOf="@+id/numCriticalInspections_TextView"
+            app:layout_constraintTop_toTopOf="@+id/lessThanOrEqual_editText" />
+
+        <EditText
+            android:id="@+id/lessThanOrEqual_editText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/ex_1"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/lessThanOrEqual_textView"
+            app:layout_constraintTop_toBottomOf="@+id/numCriticalInspections_TextView" />
+
+        <Switch
+            android:id="@+id/myFavourite_switch"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/my_favourite"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/numCriticalInspections_TextView"
+            app:layout_constraintTop_toBottomOf="@+id/greaterThanOrEqual_editText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

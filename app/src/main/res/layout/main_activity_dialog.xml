@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/greenFaceDialog_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/green_face_picture"
+            app:layout_constraintBottom_toBottomOf="@+id/yellowFaceDialog_imageView"
+            app:layout_constraintEnd_toStartOf="@+id/yellowFaceDialog_imageView"
+            app:layout_constraintTop_toTopOf="@+id/yellowFaceDialog_imageView"
+            app:srcCompat="@drawable/green_smiling_face" />
+
+        <ImageView
+            android:id="@+id/yellowFaceDialog_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/yellow_face_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/yellow_smiling_face" />
+
+        <ImageView
+            android:id="@+id/redFaceDialog_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/red_face_picture"
+            app:layout_constraintBottom_toBottomOf="@+id/yellowFaceDialog_imageView"
+            app:layout_constraintStart_toEndOf="@+id/yellowFaceDialog_imageView"
+            app:layout_constraintTop_toTopOf="@+id/yellowFaceDialog_imageView"
+            app:srcCompat="@drawable/red_smiling_face" />
+
+        <TextView
+            android:id="@+id/greenFaceDescription_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/low"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/greenFaceDialog_imageView"
+            app:layout_constraintStart_toStartOf="@+id/greenFaceDialog_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/greenFaceDialog_imageView" />
+
+        <TextView
+            android:id="@+id/yellowFaceDescription_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/medium"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/yellowFaceDialog_imageView"
+            app:layout_constraintStart_toStartOf="@+id/yellowFaceDialog_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/yellowFaceDialog_imageView" />
+
+
+        <TextView
+            android:id="@+id/redFaceDescription_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/high"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/redFaceDialog_imageView"
+            app:layout_constraintStart_toStartOf="@+id/redFaceDialog_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/redFaceDialog_imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

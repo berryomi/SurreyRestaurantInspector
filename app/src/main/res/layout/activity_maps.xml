@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapViewConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".UI.MapsActivity"
+        tools:layout="@layout/activity_maps" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/mapSearchView"
+        android:elevation="5dp"
+        android:background="@drawable/map_search_view_background"
+        android:focusable="true"
+        map:layout_constraintStart_toStartOf="@id/map"
+        map:layout_constraintEnd_toStartOf="@id/mapFilter_ImageButton"
+        map:layout_constraintTop_toTopOf="@id/map" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_filter_list_grey_24dp"
+        android:id="@+id/mapFilter_ImageButton"
+        android:background="@null"
+        map:layout_constraintBottom_toBottomOf="@+id/mapSearchView"
+        map:layout_constraintEnd_toEndOf="@id/map"
+        map:layout_constraintTop_toTopOf="@+id/mapSearchView"
+        android:contentDescription="@string/searchBarFilterIcon"
+        android:focusable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/myLocationBlue_floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#F7F7F8"
+        android:backgroundTint="#F7F7F8"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_my_location_blue_24dp"
+        map:backgroundTint="#F7F7F8"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="@+id/map" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/myLocationGrey_floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#F7F7F8"
+        android:backgroundTint="#F7F7F8"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_my_location_grey_24dp"
+        map:backgroundTint="#F7F7F8"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="@+id/map" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/listBlue_floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F7F7F8"
+        android:backgroundTint="#F7F7F8"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_format_list_bulleted_grey_24dp"
+        map:backgroundTint="#F7F7F8"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintBottom_toTopOf="@id/myLocationBlue_floatingActionButton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/listGrey_floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F7F7F8"
+        android:backgroundTint="#F7F7F8"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_format_list_bulleted_grey_24dp"
+        map:backgroundTint="#F7F7F8"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintBottom_toTopOf="@id/myLocationGrey_floatingActionButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

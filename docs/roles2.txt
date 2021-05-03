@@ -1,0 +1,5 @@
+Iteration 2:
+    Ha Thu Nguyen    (Product Owner)
+    William Fung     (Team Member)
+    Jiwon Jun        (Repo Manager)
+    Henry Fang       (Scrum Master)

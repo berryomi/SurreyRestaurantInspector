@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Sodium Restaurant Inspector</string>
+    <string name="action_settings">Settings</string>
+    <string name="_0">0</string>
+    <string name="hazard_level">hazard level</string>
+    <string name="issues_found"># Issues Found:</string>
+    <string name="inspection_time">Inspection Time:</string>
+    <string name="critical">Critical:</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="non_critical">Non-Critical:</string>
+    <string name="restaurant_picture">restaurant picture</string>
+    <string name="display_numbers">%1$d</string>
+    <string name="green_face_picture">Green face picture</string>
+    <string name="yellow_face_picture">yellow face picture</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="red_face_picture">Red face picture</string>
+    <string name="mainActivityDialogTitle">Hazard Level</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="gps_coords">GPS coords:</string>
+    <string name="address">Address:</string>
+    <string name="hazard_rating">Hazard Level:</string>
+    <string name="NA">N/A</string>
+    <string name="title_activity_inspection">Inspection Activity</string>
+    <string name="inspection_type">Inspection type:</string>
+    <string name="date_of_inspection">Date of inspection:</string>
+    <string name="critical_issues_found">Critical issues found:</string>
+    <string name="non_critical_issues_found">Non critical issues found:</string>
+    <string name="insert_restaurant_name_here">Insert restaurant name here</string>
+    <string name="list_of_violations">List of violations:</string>
+    <string name="todo">TODO</string>
+    <string name="hazard_colon">Hazard level:</string>
+    <string name="entry">Entry</string>
+    <string name="noInspectionYet">No inspections yet</string>
+    <string name="noViolations">No violations in this inspection.</string>
+    <string name="days">%1$d day(s)</string>
+
+    <string-array name="shortDescription">
+        <item name="101">Violation 101: Interior design not with regulation</item>
+        <item name="102">Violation 102: Unapproved food premise</item>
+        <item name="103">Violation 103: Valid permit not valid for establishment</item>
+        <item name="104">Violation 104: Permit not shown in convenient location</item>
+        <item name="201">Violation 201: Food not viable for human consumption</item>
+        <item name="202">Violation 202: Food processing procedure unsanitary</item>
+        <item name="203">Violation 203: Food cooling method unsanitary</item>
+        <item name="204">Violation 204: Food unsafe to eat</item>
+        <item name="205">Violation 205: Cold food stored in hazardous environment</item>
+        <item name="206">Violation 206: Hot food stored in hazardous environment</item>
+        <item name="208">Violation 208: Obtained food from unapproved sources</item>
+        <item name="209">Violation 209: Food not protected from contamination</item>
+        <item name="210">Violation 210: Thawed food in hazardous environment</item>
+        <item name="211">Violation 211: Frozen food not stored properly</item>
+        <item name="212">Violation 212: Use of unacceptable food handling procedures</item>
+        <item name="301">Violation 301: Workstation unsanitary</item>
+        <item name="302">Violation 302: Workstation not properly cleaned</item>
+        <item name="303">Violation 303: Hot and cold water facilities not maintained</item>
+        <item name="304">Violation 304: Pests present on premise</item>
+        <item name="305">Violation 305: Pests can enter/harbour/breed at premise</item>
+        <item name="306">Violation 306: Food area unsanitary</item>
+        <item name="307">Violation 307: Equipment makes contact with undesirable surfaces</item>
+        <item name="308">Violation 308: Equipment/utensils/food not in good working order</item>
+        <item name="309">Violation 309: Chemicals not properly labeled or stored</item>
+        <item name="310">Violation 310: Single use items used more than once</item>
+        <item name="311">Violation 311: Premise not maintained properly</item>
+        <item name="312">Violation 312: Non-essential items stored on premise</item>
+        <item name="313">Violation 313: Live animals on premise</item>
+        <item name="314">Violation 314: Unacceptable written sanitation procedures</item>
+        <item name="315">Violation 315: Equipment lack accurate thermometers</item>
+        <item name="401">Violation 401: Inadequate handwashing station</item>
+        <item name="402">Violation 402: Employees do not wash hands properly</item>
+        <item name="403">Violation 403: Employee lack good personal hygiene</item>
+        <item name="404">Violation 404: Employee smoking on food area</item>
+        <item name="501">Violation 501: Operator does not have FOODSAFE level 1</item>
+        <item name="502">Violation 502: Staff does not have FOODSAFE level 1</item>
+    </string-array>
+
+    <string-array name="violationDescriptionToastMessages">
+        <item name="101">101: Plans/construction/alterations not in accordance with the Regulation [s. 3; s. 4]</item>
+        <item name="102">102: Operation of an unapproved food premises [s. 6(1)]</item>
+        <item name="103">103: Failure to hold a valid permit while operating a food service establishment [s. 8(1)]</item>
+        <item name="104">104: Permit not posted in a conspicuous location [s. 8(7)]</item>
+        <item name="201">201: Food contaminated or unfit for human consumption [s. 13]</item>
+        <item name="202">202: Food not processed in a manner that makes it safe to eat [s. 14(1)]</item>
+        <item name="203">203: Food not cooled in an acceptable manner [s. 12(a)]</item>
+        <item name="204">204: Food not cooked or reheated in a manner that makes it safe to eat [s. 14(1)]</item>
+        <item name="205">205: Cold potentially hazardous food stored/displayed above 4 °C. [s. 14(2)]</item>
+        <item name="206">206: Hot potentially hazardous food stored/displayed below 60 °C. [s. 14(2)]</item>
+        <item name="208">208: Foods obtained from unapproved sources [s. 11]</item>
+        <item name="209">209: Food not protected from contamination [s. 12(a)]</item>
+        <item name="210">210: Food not thawed in an acceptable manner [s. 14(2)]</item>
+        <item name="211">211: Frozen potentially hazardous food stored/displayed above -18 °C. [s. 14(3)]</item>
+        <item name="212">212: Operator has not provided acceptable written food handling procedures [s. 23]</item>
+        <item name="301">301: Equipment/utensils/food contact surfaces not maintained in sanitary condition [s. 17(1)]</item>
+        <item name="302">302: Equipment/utensils/food contact surfaces not properly washed and sanitized [s. 17(2)]</item>
+        <item name="303">303: Equipment/facilities/hot &amp; cold water for sanitary maintenance not adequate [s. 17(3); s. 4(1)(f)]</item>
+        <item name="304">304: Premises not free of pests [s. 26(a)]</item>
+        <item name="305">305: Conditions observed that may allow entrance/harbouring/breeding of pests [s. 26(b)(c)]</item>
+        <item name="306">306: Food premises not maintained in a sanitary condition [s. 17(1)]</item>
+        <item name="307">307: Equipment/utensils/food contact surfaces are not of suitable design/material [s. 16; s. 19]</item>
+        <item name="308">308: Equipment/utensils/food contact surfaces are not in good working order [s. 16(b)]</item>
+        <item name="309">309: Chemicals cleansers &amp; similar agents stored or labeled improperly [s. 27]</item>
+        <item name="310">310: Single use containers &amp; utensils are used more than once [s. 20]</item>
+        <item name="311">311: Premises not maintained as per approved plans [s. 6(1)(b)]</item>
+        <item name="312">312: Items not required for food premises operation being stored on the premises [s. 18]</item>
+        <item name="313">313: Live animal on the premises excluding guide animal in approved areas [s. 25(1)]</item>
+        <item name="314">314: Operator has not provided acceptable written sanitation procedures [s. 24]</item>
+        <item name="315">315: Refrigeration units and hot holding equipment lack accurate thermometers [s. 19(2)]</item>
+        <item name="401">401: Adequate handwashing stations not available for employees [s. 21(4)]</item>
+        <item name="402">402: Employee does not wash hands properly or at adequate frequency [s. 21(3)]</item>
+        <item name="403">403: Employee lacks good personal hygiene clean clothing and hair control [s. 21(1)]</item>
+        <item name="404">404: Employee smoking in food preparation/processing/storage areas [s. 21(2)]</item>
+        <item name="501">501: Operator does not have FOODSAFE Level 1 or Equivalent [s. 10(1)]</item>
+        <item name="502">502: In operator’s absence no staff on duty has FOODSAFE Level 1 or equivalent [s. 10(2)]</item>
+    </string-array>
+
+    <string-array name="filterHazardListOptions">
+        <item>All</item>
+        <item>Low</item>
+        <item>Moderate</item>
+        <item>High</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="hazard_level_title">Hazard Level:</string>
+    <string name="infoWindowRestaurantPicture">infoWindowRestaurantPicture</string>
+    <string name="map">Map View</string>
+
+    <string name="update_data_dialog_title">New data available</string>
+    <string name="update_data_question">New data have been updated on the server.
+                                        Do you want to download the data?</string>
+    <string name="update_data_positive_button">Yes, download please</string>
+    <string name="update_data_negative_button">No, I\'m good!</string>
+    <string name="downloading_data">Downloading in progress. Please wait!</string>
+    <string name="cancel_downloading_data">Cancel download</string>
+    <string name="download_complete">Download completed</string>
+    <string name="download_canceled">Download canceled</string>
+    <string name="warning">Warning!</string>
+    <string name="network_warning">You are not connected to the network.
+        You need to be connected to the network to download new data.</string>
+
+    <string name="last_inspection_date">Last Inspection Date:</string>
+    <string name="title_activity_favourites_list">Favourites List Activity</string>
+    <string name="list_of_favourites">List of your favourite restaurants with new inspections updated:</string>
+    <string name="list_favourite_no_restaurants">There are no restaurants with updated data.</string>
+    <string name="click_to_exit">Click to exit</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="search">Search</string>
+    <string name="filter">filter</string>
+    <string name="searchViewHint">Enter restaurant name</string>
+    <string name="filter_options">Filter Options</string>
+    <string name="of_critical_inspections_within_last_year"># of Critical Inspections (within last year)</string>
+    <string name="lessThanOrEqual"><![CDATA[<=]]> (Less Than or Equal)</string>
+    <string name="greaterThanOrEqual"><![CDATA[>=]]> (Greater Than or Equal)</string>
+    <string name="my_favourite">Show My Favourite</string>
+    <string name="hazardLevelForMostRecentInspection">Hazard level \n(most recent inspection)</string>
+    <string name="ex_1">Ex: 1</string>
+    <string name="searchBarFilterIcon">searchBarFilterIcon</string>
+    <string name="clear">CLEAR ALL</string>
+    <string name="filter_applied">Filter Applied</string>
+    <string name="filter_cleared">Filter Cleared</string>
+    <string name="clear_search_hint">Click "X" again to clear search</string>
+</resources>
