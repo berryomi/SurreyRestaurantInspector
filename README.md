@@ -1,9 +1,22 @@
+# Surrey Restaurant Inspector
+
+An Android application that displays the health inspection results of the restaurants located in Surrey, BC. The system analyzes the inspection report by calling Surrey’s Open Data API into an ordered list of restaurants.
+
+## Screenshots
+
+<p align="left">
+    <img src="./screenshots/overview.png" width="600">
+</p>
+
+
 # Team Sodium
+
 ### Members
 - William Fung
 - Ha Thu Nguyen
 - Henry Fang
 - Jiwon Jun
+
 ### Roles
 - Iteration 1:
     - William Fung      (Product Owner)
